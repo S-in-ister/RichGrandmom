@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Microsoft JhengHei Bold", Arial, Helvetica, sans-serif;
+}
+
+.gradient {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff0000+0,c80000+100 */
+  background: #ff0000; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ff0000 0%, #c80000 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #ff0000 0%,#c80000 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #ff0000 0%,#c80000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#c80000',GradientType=0 ); /* IE6-9 */
+}
+
+.contract-btn {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.account-btn {
+  width: 100%;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.return {
+  cursor: pointer;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

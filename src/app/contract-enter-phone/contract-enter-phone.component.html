@@ -1,0 +1,13 @@
+<div class="main">
+  <img src="../assets/icon/icon_Arrow_Back.png" routerLink="/contract/terms">
+
+  <h3>請輸入手機號碼</h3>
+
+  <form [formGroup]="formGroup" (ngSubmit)="login()" class="main-enter-phone">
+      <label for="phone">手機號碼</label>
+      <input id="phone" type="tel" maxlength="10" [formControl]="phoneControl">
+
+      <button class="contract-btn gradient" type="submit" [disabled]="formGroup.invalid" routerLink="/contract/verify-phone" (click)="test()">取得驗證碼</button>
+  </form>
+
+</div>

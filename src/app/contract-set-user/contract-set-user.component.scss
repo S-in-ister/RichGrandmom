@@ -1,0 +1,35 @@
+.main {
+  position: relative;
+  width: 90%;
+  height: 95vh;
+  margin: 0 auto;
+  padding-top: 50px;
+
+  img {
+    width: 20px;
+  }
+
+  h3 {
+    text-align: center;
+    padding: 20px 0 50px 0;
+  }
+
+  .main-set-user {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      color: #808080;
+    }
+
+    input {
+      border: 0;
+      border-bottom: 1px #999999 solid;
+      height: 30px;
+      background-color: rgba(255, 255, 255, 0.0);
+      font-size: 16px;
+      appearance: none;
+    }
+  }
+
+}

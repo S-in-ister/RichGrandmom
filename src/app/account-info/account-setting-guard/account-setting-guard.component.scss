@@ -1,0 +1,89 @@
+.main {
+  position: relative;
+  height: 100%;
+  // padding: 10% 5% 0 5%;
+
+  .top {
+    position: relative;
+    height: 40px;
+    padding: 140px 5% 0 5%;
+
+    .return {
+      width: 20px;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .main-content {
+
+    h6 {
+      margin-left: 5%;
+    }
+
+    .setting, .user-info, .other {
+      margin: 6px 0 24px 0;
+    }
+
+    .row {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      color: #666666;
+      padding: 16px 0;
+      cursor: pointer;
+
+      .last-one:after {
+        content: none;
+      }
+
+      p:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: auto;
+        bottom: 0;
+        right: auto;
+        height: 1px;
+        width: 90%;
+        background-color: #8f8f8f;
+      }
+
+      p {
+        margin: 0;
+        margin-left: 5%;
+      }
+
+      span {
+        position: absolute;
+        right: 10%;
+        color: black;
+
+        :after {
+          content: none;
+        }
+      }
+
+      img {
+        width: 10px;
+        margin-right: 5%;
+      }
+
+
+      }
+
+  }
+}
+
+

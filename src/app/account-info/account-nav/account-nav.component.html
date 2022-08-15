@@ -1,0 +1,41 @@
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<div class="nav-content">
+  <div class="menu" routerLink="/account-nav/index" (click)="onHome()">
+    <img *ngIf="home == false" src="../assets/icon/icon_Home.png">
+    <img *ngIf="home == true" src={{home_img}}>
+    <p *ngIf="home == false">首頁</p>
+    <p *ngIf="home == true" class="active">首頁</p>
+  </div>
+
+  <div class="menu" routerLink="/account-nav/consignment" (click)="onConsignment()">
+    <img *ngIf="consignment == false" src="./assets/icon/icon_Consignment.png">
+    <img *ngIf="consignment == true" src={{consignment_img}}>
+    <p *ngIf="consignment == false">託售</p>
+    <p *ngIf="consignment == true" class="active">託售</p>
+  </div>
+
+  <div class="menu" routerLink="/account-nav/transfer" (click)="onPay()">
+    <img *ngIf="pay == false" src="../assets/icon/icon_Pay.png">
+    <img *ngIf="pay == true" src={{pay_img}}>
+    <p *ngIf="pay == false">收付</p>
+    <p *ngIf="pay == true" class="active">收付</p>
+  </div>
+
+  <div class="menu" routerLink="/account-nav/statement" (click)="onDetails()">
+    <img *ngIf="details == false" src="../assets/icon/icon_Details.png">
+    <img *ngIf="details == true" src={{details_img}}>
+    <p *ngIf="details == false">明細</p>
+    <p *ngIf="details == true" class="active">明細</p>
+  </div>
+
+  <div class="menu" routerLink="/account-nav/my" (click)="onMember()">
+    <img *ngIf="member == false" src="../assets/icon/icon_member.png">
+    <img *ngIf="member == true" src={{member_img}}>
+    <p *ngIf="member == false">我的</p>
+    <p *ngIf="member == true" class="active">我的</p>
+  </div>
+
+</div>

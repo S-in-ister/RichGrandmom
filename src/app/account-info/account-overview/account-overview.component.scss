@@ -1,0 +1,113 @@
+.main {
+  position: relative;
+  height: 100%;
+  padding: 50px 5% 0 5%;
+
+  // 上方列
+  .top {
+    position: relative;
+    height: 40px;
+    margin-bottom: 20px;
+
+    .return {
+      width: 20px;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .setting {
+      width: 80px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(0, -50%);
+      display: flex;
+      justify-content: space-between;
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+
+        img {
+          width: 30px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  // 存款
+  .deposit {
+    margin-bottom: 30px;
+
+    p {
+      color: #666666;
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+  }
+
+  // 餘額
+  .balance {
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+
+    .balance-item:first-child {
+      color: white;
+      border-radius: 20px 20px 0 0;
+      text-shadow: 0 2px 0 black;
+    }
+
+    .balance-item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px #dfdfdf solid;
+
+      p {
+        padding: 14px 15px;
+      }
+    }
+  }
+
+  // 點數
+  .point {
+    width: 100%;
+    border-radius: 20px;
+
+    .point-item:first-child {
+      color: white;
+      border-radius: 20px 20px 0 0;
+      text-shadow: 0 2px 0 black;
+    }
+
+    .point-item {
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      border-radius: 0 0 20px 20px;
+
+      p {
+        padding: 14px 15px;
+      }
+    }
+  }
+
+
+}

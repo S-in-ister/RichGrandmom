@@ -1,0 +1,139 @@
+.main {
+  position: relative;
+  height: 100%;
+  padding: 50px 5% 0 5%;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .setting {
+      display: flex;
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #808080;
+        margin-left: 20px;
+
+        img {
+          width: 30px;
+          height: 30px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  // 餘額
+  .balance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .balance-items {
+      padding-bottom: 20px;
+
+      p {
+        color: #666666;
+        padding-bottom: 6px;
+      }
+
+      h2 {
+        font-size: 40px;
+      }
+
+      h3 {
+        font-size: 32px;
+      }
+    }
+  }
+
+  // 活動
+  .activity {
+    // max-width: 400px;
+    width: 100%;
+    height: 40vw;
+    max-height: 150px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: black;
+
+    img {
+      width: 100%;
+      height: 40vw;
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+    }
+  }
+
+  // 回饋
+  .report {
+    position: absolute;
+    height: 160px;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    border-radius: 20px;
+    background: white;
+
+
+    .report-title {
+      // height: 50px;
+      border-radius: 20px 20px 0 0;
+      text-align: center;
+      padding: 14px;
+      color: white;
+      text-shadow: 0 2px 0 black;
+    }
+
+    .report-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .report-content-info {
+        width: 33.33%;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 11px 0;
+        border-right: 1px #808080 solid;
+
+        p {
+          text-align: center;
+          // line-height: 12px;
+          // margin: 0;
+          margin: 10px 0;
+        }
+        h2 {
+          margin-top: 20px;
+          color: red;
+          margin: 0;
+        }
+      }
+
+      .report-content-info:last-child {
+        border: 0;
+      }
+    }
+  }
+}
+
+
+
+

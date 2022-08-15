@@ -1,0 +1,47 @@
+.main {
+  position: relative;
+  height: 100%;
+  padding: 50px 5% 0 5%;
+
+  // 上方列
+  .top {
+    position: relative;
+    height: 40px;
+    margin-bottom: 20px;
+
+    .return {
+      width: 20px;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .main-content {
+    position: relative;
+    height: calc(100% - 100px);
+
+    .main-content-check {
+      width: 100%;;
+      background-color: white;
+      border-radius: 20px;
+      padding: 10px 0;
+
+      p {
+        padding: 10px 10px;
+      }
+    }
+
+    button {
+      position: absolute;
+      bottom: 20px;
+    }
+  }
+}

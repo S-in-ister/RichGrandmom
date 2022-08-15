@@ -1,0 +1,123 @@
+<div class="main">
+  <!-- 上方列 -->
+  <div class="top">
+    <img class="return" routerLink="/account-nav/setting-faq-normal" src="../assets/icon/icon_Arrow_Back.png">
+    <h3>帳戶問題</h3>
+  </div>
+
+  <div class="main-content">
+    <div class="setting-faq">
+      <!-- <div class="row">
+        <p>如何建立富奶奶帳戶?</p>
+        <img src="../assets/icon/icon_Arrow_Down.png">
+      </div>
+      <div class="row">
+        <p>外籍人士可以申請富奶奶帳戶?</p>
+        <img src="../assets/icon/icon_Arrow_Down.png">
+      </div>
+      <div class="row">
+        <p>開戶為何需要填寫他行銀行帳號?</p>
+        <img src="../assets/icon/icon_Arrow_Down.png">
+      </div>
+      <div class="row">
+        <p class="last-one">可以開立幾個富奶奶帳戶?</p>
+        <img src="../assets/icon/icon_Arrow_Down.png">
+      </div> -->
+
+      <cdk-accordion class="example-accordion" multi="true">
+        <cdk-accordion-item
+          *ngFor="let item of items; let index = index;"
+          #accordionItem="cdkAccordionItem"
+          class="example-accordion-item"
+          role="button"
+          tabindex="0"
+          [attr.id]="'accordion-header-' + index"
+          [attr.aria-expanded]="accordionItem.expanded"
+          [attr.aria-controls]="'accordion-body-' + index">
+          <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+            {{ item }}
+            <img src="../assets/icon/icon_Arrow_Down.png">
+          </div>
+
+          <div
+            class="example-accordion-item-body"
+            role="region"
+            [style.display]="accordionItem.expanded ? '' : 'none'"
+            [attr.id]="'accordion-body-' + index"
+            [attr.aria-labelledby]="'accordion-header-' + index">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+            excepturi incidunt ipsum deleniti labore, tempore non nam doloribus blanditiis.
+          </div>
+        </cdk-accordion-item>
+      </cdk-accordion>
+
+      <!-- <div class="example-action-buttons">
+        <button mat-button (click)="accordion.openAll()">Expand All</button>
+        <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+      </div>
+      <mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Personal data
+            </mat-panel-title>
+            <mat-panel-description>
+              Type your name and age
+              <mat-icon>account_circle</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+
+          <mat-form-field appearance="fill">
+            <mat-label>First name</mat-label>
+            <input matInput>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Age</mat-label>
+            <input matInput type="number" min="1">
+          </mat-form-field>
+
+        </mat-expansion-panel>
+        <mat-expansion-panel disabled>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Destination
+            </mat-panel-title>
+            <mat-panel-description>
+              Type the country name
+              <mat-icon>map</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Country</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Day of the trip
+            </mat-panel-title>
+            <mat-panel-description>
+              Inform the date you wish to travel
+              <mat-icon>date_range</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Date</mat-label>
+            <input matInput [matDatepicker]="picker" (focus)="picker.open()" readonly>
+          </mat-form-field>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-expansion-panel>
+      </mat-accordion> -->
+
+
+
+
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,97 @@
+.main {
+  position: relative;
+  height: 100%;
+  padding: 50px 5% 0 5%;
+
+  // 上方列
+  .top {
+    position: relative;
+    height: 40px;
+    margin-bottom: 20px;
+
+    .return {
+      width: 20px;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .receive {
+      width: 100px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(0, -50%);
+      display: flex;
+      justify-content: flex-end;
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+
+        img {
+          width: 30px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 100px);
+
+    span {
+      position: absolute;
+      right: 0;
+      color: black;
+      font-size: 14px;
+    }
+
+    .add {
+      color: red;
+      cursor: pointer;
+    }
+
+    label {
+      color: #808080;
+    }
+
+    input, select {
+      padding: 7px 0;
+      margin-bottom: 20px;
+      border: 0;
+      border-bottom: 1px gray solid;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .transfer-warn {
+      margin-top: 20px;
+      color: #808080;
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    button {
+      position: absolute;
+      bottom: 20px;
+    }
+  }
+
+}

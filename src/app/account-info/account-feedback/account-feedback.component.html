@@ -1,0 +1,42 @@
+<div class="main">
+  <!-- 上方列 -->
+  <div class="top">
+    <img class="return" routerLink="/account-nav/index" src="../assets/icon/icon_Arrow_Back.png">
+    <h3>建議給我們</h3>
+  </div>
+
+  <div class="main-content">
+    <p>分享您的感受，讓我們更進步</p>
+
+    <div class="stars">
+      <div class="star" (click)="oneStar()">
+        <img *ngIf="one == false" src="../assets/icon/icon_Star.png">
+        <img *ngIf="one == true" src={{one_img}}>
+      </div>
+      <div class="star" (click)="twoStar()">
+        <img *ngIf="two == false" src="../assets/icon/icon_Star.png">
+        <img *ngIf="two == true" src={{two_img}}>
+      </div>
+      <div class="star" (click)="threeStar()">
+        <img *ngIf="three == false" src="../assets/icon/icon_Star.png">
+        <img *ngIf="three == true" src={{three_img}}>
+      </div>
+      <div class="star" (click)="fourStar()">
+        <img *ngIf="four == false" src="../assets/icon/icon_Star.png">
+        <img *ngIf="four == true" src={{four_img}}>
+      </div>
+      <div class="star" (click)="fiveStar()">
+        <img *ngIf="five == false" src="../assets/icon/icon_Star.png">
+        <img *ngIf="five == true" src={{five_img}}>
+      </div>
+    </div>
+
+    <div class="feedback">
+      <p>建議回饋</p>
+      <textarea name="" id="" cols="40" rows="10" maxlength="120"></textarea>
+    </div>
+
+    <button class="account-btn gradient" routerLink="/account-nav/index">送出</button>
+  </div>
+
+</div>

@@ -1,0 +1,79 @@
+<div class="main">
+  <div class="main-content">
+    <p class="title">請輸入目前的防護金鑰</p>
+    <div class="show">
+      <div class="show-item active1">
+        <p class="rich-show">R</p>
+        <p class="rich-hidden"></p>
+      </div>
+      <div class="show-item active2">
+        <p class="rich-show">I</p>
+        <p class="rich-hidden"></p>
+      </div>
+      <div class="show-item active3">
+        <p class="rich-show">C</p>
+        <p class="rich-hidden"></p>
+      </div>
+      <div class="show-item active4">
+        <p class="rich-show">H</p>
+        <p class="rich-hidden"></p>
+      </div>
+      <div class="show-item active5">
+        <p class="rich-show">9</p>
+        <p class="rich-hidden"></p>
+      </div>
+      <div class="show-item active6">
+        <p class="rich-show">9</p>
+        <p class="rich-hidden"></p>
+      </div>
+    </div>
+  </div>
+  <div class="input">
+    <div>
+      <p class="value" id={{num1}} (click)="clickEvent1()"
+      [ngClass]="status1 ? 'active' : ''">{{num1}}</p>
+    </div>
+    <div>
+      <p class="value" id={{num2}} (click)="clickEvent2()"
+      [ngClass]="status2 ? 'active' : ''">{{num2}}</p>
+    </div>
+    <div>
+      <p class="value" id={{num3}} (click)="clickEvent3()"
+      [ngClass]="status3 ? 'active' : ''">{{num3}}</p>
+    </div>
+    <div>
+      <p class="value" id={{num4}} (click)="clickEvent4()"
+      [ngClass]="status4 ? 'active' : ''">{{num4}}</p>
+    </div>
+    <div>
+      <p class="value" id={{num5}} (click)="clickEvent5()"
+      [ngClass]="status5 ? 'active' : ''">{{num5}}</p>
+    </div>
+    <div>
+      <p class="value" id={{num6}} (click)="clickEvent6()"
+      [ngClass]="status6 ? 'active' : ''">{{num6}}</p>
+    </div>
+    <div>
+      <p class="value" id={{num7}} (click)="clickEvent7()"
+      [ngClass]="status7 ? 'active' : ''">{{num7}}</p>
+    </div>
+    <div>
+      <p class="value" id={{num8}} (click)="clickEvent8()"
+      [ngClass]="status8 ? 'active' : ''">{{num8}}</p>
+    </div>
+    <div>
+      <p class="value" id={{num9}} (click)="clickEvent9()"
+      [ngClass]="status9 ? 'active' : ''">{{num9}}</p>
+    </div>
+    <div>
+      <p class="forget">LOGO</p>
+    </div>
+    <div>
+      <p class="value" id={{num0}} (click)="clickEvent10()"
+      [ngClass]="status10 ? 'active' : ''">{{num0}}</p>
+    </div>
+    <div>
+      <img src="../assets/icon/icon_Number_Delete.png" (click)="del()">
+    </div>
+  </div>
+</div>

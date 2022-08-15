@@ -1,0 +1,82 @@
+.main {
+  position: relative;
+  height: 100%;
+  padding: 50px 5% 0 5%;
+
+  .top {
+    position: relative;
+    height: 40px;
+    margin-bottom: 20px;
+
+    .return {
+      width: 20px;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .main-content {
+    .date {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      border-radius: 50px;
+      background-color: #fafafa;
+      padding: 10px 0;
+      cursor: pointer;
+
+      p {
+        margin: 0 auto;
+      }
+
+      img {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translate(0, -50%);
+        width: 20px;
+      }
+    }
+
+    table {
+      width: 100%;
+      border-spacing: 0;
+
+      tr:first-child {
+        cursor: auto;
+      }
+
+      tr {
+        padding: 10px 0;
+        color: #666666;
+        cursor: pointer;
+
+        .title {
+          color: black;
+          padding: 20px 0 10px 0;
+        }
+
+        td {
+          padding: 20px 0;
+          border-bottom: 1px #808080 solid;
+
+          img {
+            width: 20px;
+          }
+        }
+
+        :nth-child(3), :nth-child(4) {
+          text-align: right;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<div class="main">
+  <div class="info">
+    <label for="id-number">身分證字號</label>
+    <input id="id-number" type="text" class="input">
+    <input type="checkbox" id="cbox1" value="remember" class="check"><span>記住我</span>
+  </div>
+
+  <div class="info">
+    <label for="user-name">使用者代號</label>
+    <input id="user-name" type="text" class="input">
+    <input type="checkbox" id="cbox1" value="remember" class="check"><span>記住我</span>
+  </div>
+
+  <div class="info">
+    <label for="user-password">使用者密碼</label>
+    <input id="user-password" class="input" type="text">
+  </div>
+
+  <div class="verify">
+    <!-- <div class="verify-box"></div> -->
+    <canvas class="verify-box" (click)="getNewValidate()"></canvas>
+    <div class="info">
+      <label for="verify-code">請入左側驗證碼</label>
+      <input id="verify-code" class="input" type="text">
+    </div>
+  </div>
+
+  <button routerLink="/account-nav/index" class="button gradient">登入</button>
+
+  <div class="menu" routerLink="/account-safe/input-key">
+    <img src="../assets/icon/icon_Customer_Red.png" alt="">
+    <p>客服</p>
+  </div>
+
+  <p>忘記代號/密碼?</p>
+</div>

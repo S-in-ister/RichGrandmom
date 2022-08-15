@@ -1,0 +1,26 @@
+<div class="main">
+  <!-- 上方列 -->
+  <div class="top login-bar">
+    <img class="return" routerLink="/account-nav/transfer-edit" src="../assets/icon/icon_Arrow_Back.png">
+    <h3>新增常用帳號</h3>
+  </div>
+
+  <div class="main-content">
+    <label for="bank">銀行名稱</label>
+    <select name="bank" id="bank">
+      <option value="中國信託"></option>
+      <option value="國泰"></option>
+      <option value="新光"></option>
+    </select>
+
+    <label for="account">銀行帳號/手機號碼</label>
+    <input id="account" type="text" value="000-0000000000">
+
+    <label for="name">暱稱</label>
+    <input id="name" type="text" value="陳二">
+    <span>字數上限為20</span>
+
+    <button class="account-btn gradient" routerLink="/account-nav/transfer-edit">完成</button>
+  </div>
+
+</div>

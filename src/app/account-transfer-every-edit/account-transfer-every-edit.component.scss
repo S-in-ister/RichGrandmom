@@ -1,0 +1,94 @@
+.main {
+  position: relative;
+  height: 100%;
+  padding: 50px 5% 0 5%;
+
+  // 上方列
+  .top {
+    position: relative;
+    height: 40px;
+    margin-bottom: 20px;
+
+    .return {
+      width: 20px;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .receive {
+      width: 100px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(0, -50%);
+      display: flex;
+      justify-content: flex-end;
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+
+        img {
+          width: 30px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 100px);
+
+    .edit {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #4d4d4d;
+      padding-bottom: 10px;
+
+      span:last-child {
+        cursor: pointer;
+      }
+    }
+
+    .person {
+      position: relative;
+      border-bottom: 1px #808080 solid;
+      margin-bottom: 20px;
+
+      .person-account {
+        color: #4d4d4d;
+        margin-top: 14px;
+      }
+
+      img {
+        width: 30px;
+        position: absolute;
+        right: 0;
+        bottom:6px;
+        cursor: pointer;
+      }
+
+      img:first-child {
+        right: 50px;
+      }
+    }
+  }
+
+}

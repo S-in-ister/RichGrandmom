@@ -1,0 +1,102 @@
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .main-content {
+    position: relative;
+    height: 50%;
+    background: url('/assets/bg_Red.png');
+    background-size: cover;
+
+    .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 24px;
+    }
+
+    .show {
+      position: absolute;
+      bottom: 60px;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+
+      .show-item {
+        display: flex;
+        align-items: center;
+
+        .rich-show {
+          width: 30px;
+          height: 30px;
+          color: black;
+          background-color: white;
+          border-radius: 50px;
+          text-align: center;
+          line-height: 30px;
+          display: none;
+        }
+
+        .rich-hidden {
+          width: 10px;
+          height: 10px;
+          background-color: white;
+          border-radius: 50%;
+        }
+      }
+
+      #open1, #open2, #open3, #open4, #open5, #open6 {
+        .rich-show {
+          display: block;
+        }
+        .rich-hidden {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .input {
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #fafafa;
+
+    div {
+      position: relative;
+      width: 33.33%;
+      // cursor: pointer;
+
+      p {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #e8e8e8;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+      }
+
+      img {
+        position: absolute;
+        width: 50px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .forget {
+        font-size: 12px;
+      }
+    }
+  }
+}

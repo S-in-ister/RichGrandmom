@@ -1,0 +1,29 @@
+<div class="main">
+  <!-- 上方列 -->
+  <div class="top login-bar">
+    <img class="return" routerLink="/account-nav/transfer" src="../assets/icon/icon_Arrow_Back.png">
+    <h3>收款</h3>
+  </div>
+
+  <div class="main-content">
+    <div class="qrcode">
+      <p>富奶奶QRcode</p>
+      <!-- <img src="../assets/icon/icon_QRcode.png"> -->
+      <qr-code value={{QrCodeAccount}} size="200" errorCorrectionLevel="M"></qr-code>
+    </div>
+
+    <div class="account">
+      <p>我的帳號</p>
+      <p>0000-0000-0000-00</p>
+      <div class="items">
+        <div class="item share">
+          <img src="../assets/icon/icon_Share.png">分享帳號
+        </div>
+        <div class="item copy">
+          <img src="../assets/icon/icon_Copy.png">複製
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

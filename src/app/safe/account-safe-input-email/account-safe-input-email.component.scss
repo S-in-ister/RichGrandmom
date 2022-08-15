@@ -1,0 +1,92 @@
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: url("/assets/bg_Red.png");
+  background-size: cover;
+
+  .logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 120px;
+    background-color: white;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+      color: white;
+    }
+  }
+
+  .main-set-safe {
+    position: relative;
+    width: 90%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  p:first-child {
+    margin-top: 30px;
+  }
+
+  p {
+    width: 80%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+
+
+
+    span:first-child {
+      width: 30px;
+      height: 30px;
+      border: 2px red solid;
+      color: red;
+      border-radius: 50%;
+    }
+
+    span.active {
+      background-color: red;
+      color: white;
+    }
+
+    span.finish {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #c80000;
+    }
+
+    span {
+      text-align: center;
+      line-height: 30px;
+      margin: 0 10px;
+    }
+  }
+
+  button {
+    bottom: 5%;
+    width: 90%;
+  }
+
+}
+
+.gou {
+  width: 18px;
+  height: 9px;
+  border-left: 3px solid white;
+  border-bottom: 3px solid white;
+  transform: rotate(-45deg);
+}

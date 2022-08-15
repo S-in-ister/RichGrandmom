@@ -1,0 +1,38 @@
+<div class="main">
+  <!-- 上方列 -->
+  <div class="top login-bar">
+    <img class="return" routerLink="/account-nav/my" src="../assets/icon/icon_Arrow_Back.png">
+    <h3>轉帳交易</h3>
+    <div class="receive">
+      <div class="menu" routerLink="/account-nav/transfer-receive">
+        <img src="../assets/icon/icon_QRcode.png">
+        <p>收款</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <label for="bank">銀行名稱<span>免費跨行次數:5</span></label>
+    <select name="bank" id="bank">
+      <option value="">中國信託</option>
+      <option value="">國泰</option>
+      <option value="">新光</option>
+    </select>
+
+    <label for="account">銀行帳號/手機號碼<span class="add" routerLink="/account-nav/transfer-every">選擇/新增常用帳號</span></label>
+    <input id="account" type="text">
+
+    <label for="">轉帳金額</label>
+    <input type="number" value="100">
+
+    <h4>可用餘額 $2000</h4>
+    <div class="transfer-warn">
+      <p>轉帳餘額:</p>
+      <p>1. 轉帳給自己，單筆最多五萬。</p>
+      <p>2. 轉帳給他人，單筆最多一萬。</p>
+    </div>
+
+    <button class="account-btn gradient" routerLink="/account-nav/transfer-check">轉帳</button>
+  </div>
+
+</div>

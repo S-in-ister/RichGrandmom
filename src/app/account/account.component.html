@@ -1,0 +1,19 @@
+<div class="main">
+  <div class="logo">LOGO</div>
+
+  <div class="main-account">
+    <div class="main-account-label" *ngIf="status == false">
+      <p routerLink="login" class="label active">登入帳號</p>
+      <p routerLink="signup" class="label" (click)="clickEvent()">立即註冊</p>
+    </div>
+
+    <div class="main-account-label" *ngIf="status == true">
+      <p routerLink="login" class="label" (click)="clickEvent()">登入帳號</p>
+      <p routerLink="signup" class="label active">立即註冊</p>
+    </div>
+
+    <div class="main-account-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

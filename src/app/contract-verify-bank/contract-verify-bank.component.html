@@ -1,0 +1,35 @@
+<div class="main">
+  <img src="../assets/icon/icon_Arrow_Back.png" routerLink="/contract/enter-invite">
+
+  <h3>驗證其他銀行帳號</h3>
+
+  <p>為了確保交易安全，請確認為本人開戶</p>
+
+  <div class="main-verify-bank">
+      <label for="phone">手機號碼</label>
+      <input id="phone" type="tel" maxlength="10">
+
+      <label for="bank">選擇銀行</label>
+      <select name="" id="bank">
+        <option value="">中國信託</option>
+        <option value="">國泰</option>
+        <option value="">新光</option>
+      </select>
+
+      <label for="bank-account">銀行帳號</label>
+      <input id="bank-account" type="text">
+
+      <label for="bank-photo" class="bank-account-img">
+          <input id="bank-photo" type="file" accept="image/*" capture="environment" (change)="fileChange($event)">
+          <img class="upload-img" [src]="imgUrl" *ngIf="imgUrl; else default">
+
+          <ng-template #default>
+            <p>銀行帳號本</p>
+            <img class="identity-img" src="../assets/icon/icon_IdentityCard.png">
+            <img class="camera-img" src="../assets/icon/icon_Camera.png">
+          </ng-template>
+      </label>
+  </div>
+
+  <button class="contract-btn gradient" routerLink="/contract/verify-identity">送出</button>
+</div>

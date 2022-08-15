@@ -1,0 +1,36 @@
+<div class="main">
+  <!-- 上方列 -->
+  <div class="top login-bar">
+    <img class="return" routerLink="/account-nav/setting" src="../assets/icon/icon_Arrow_Back.png">
+    <h3>修改基本資料</h3>
+    <div class="setting">
+      <div class="menu" routerLink="/account-nav/feedback">
+        <img src="../assets/icon/icon_Customer.png">
+        <p>客服</p>
+      </div>
+    </div>
+  </div>
+
+  <form [formGroup]="formGroup" (ngSubmit)="change()" class="main-content">
+    <h6>為了保障您的帳戶使用安全，將不定期與您確認基本資料喔!</h6>
+    <p>通訊地址(請勿填寫郵政信箱)</p>
+
+    <label for="city">縣市</label>
+    <input id="city" type="text">
+
+    <label for="town">鄉鎮市(區)</label>
+    <input id="town" type="text">
+
+    <label for="road">路(街)名/鄉里</label>
+    <input id="road" type="text">
+
+    <label for="">教育程度</label>
+    <input type="text">
+
+    <label for="">所屬行業</label>
+    <input type="text">
+
+    <button class="account-btn gradient" type="submit" [disabled]="formGroup.invalid" routerLink="/account-nav/setting">確認修改</button>
+  </form>
+
+  </div>

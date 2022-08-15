@@ -1,0 +1,44 @@
+<div class="main">
+  <img src="../assets/icon/icon_Arrow_Back.png" routerLink="/contract/verify-bank">
+
+  <h3>拍攝身分證件</h3>
+
+  <h5>證件拍攝請勿反光，透明邊框也須拍攝進去</h5>
+
+  <div class="main-identity">
+    <label for="identity-photo1" class="identity-content">
+      <input id="identity-photo1" type="file" accept="image/*" capture="environment" (change)="fileChange01($event)">
+      <img class="upload-img" [src]="imgUrl1" *ngIf="imgUrl1; else default1">
+
+      <ng-template #default1>
+        <p>身分證正面</p>
+        <img class="identity-img" src="../assets/icon/icon_IdentityCard.png">
+        <img class="camera-img" src="../assets/icon/icon_Camera.png">
+      </ng-template>
+    </label>
+
+    <label for="identity-photo2" class="identity-content">
+      <input id="identity-photo2" type="file" accept="image/*" capture="environment" (change)="fileChange02($event)">
+      <img class="upload-img" [src]="imgUrl2" *ngIf="imgUrl2; else default2">
+
+      <ng-template #default2>
+        <p>身分證反面</p>
+        <img class="identity-img" src="../assets/icon/icon_IdentityCard.png">
+        <img class="camera-img" src="../assets/icon/icon_Camera.png">
+      </ng-template>
+    </label>
+
+    <label for="identity-photo3" class="identity-content">
+      <input id="identity-photo3" type="file" accept="image/*" capture="environment" (change)="fileChange03($event)">
+      <img class="upload-img" [src]="imgUrl3" *ngIf="imgUrl3; else default3">
+
+      <ng-template #default3>
+        <p>第二證件</p>
+        <img class="identity-img" src="../assets/icon/icon_IdentityCard.png">
+        <img class="camera-img" src="../assets/icon/icon_Camera.png">
+      </ng-template>
+    </label>
+  </div>
+
+  <button class="contract-btn gradient" routerLink="/contract/set-user">送出</button>
+</div>

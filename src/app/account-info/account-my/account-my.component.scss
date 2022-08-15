@@ -1,0 +1,159 @@
+.main {
+  position: relative;
+  height: 100%;
+  padding: 50px 5% 0 5%;
+
+  .top {
+    position: relative;
+    height: 40px;
+    margin-bottom: 20px;
+
+    .return {
+      width: 20px;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .setting {
+      width: 80px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(0, -50%);
+      display: flex;
+      justify-content: space-between;
+
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+
+        img {
+          width: 30px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .account {
+    width: 100%;
+    height: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+
+    p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    p:nth-child(2) {
+      font-size: 24px;
+    }
+
+    .items {
+      display: flex;
+
+      .item {
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+        padding: 4px 20px;
+        cursor: pointer;
+
+        img {
+          width: 14px;
+          margin-right: 4px;
+        }
+      }
+
+      .share {
+        background-color: red;
+        color: white;
+        margin-right: 15px;
+      }
+
+      .copy {
+        background-color: #dfdfdf;
+      }
+
+    }
+  }
+
+  .free {
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .free-withdraw {
+      border-right: 1px #808080 solid;
+    }
+
+    .free-withdraw, .free-transfer {
+      width: 50%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        color: red;
+        margin-top: 18px;
+      }
+    }
+  }
+
+  .overview {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+
+    .pie {
+      width: 40px;
+      margin: 0 15px;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .more {
+      width: 16px;
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translate(0, -50%);
+      margin-right: 15px;
+    }
+  }
+}

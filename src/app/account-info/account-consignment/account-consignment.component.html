@@ -1,0 +1,30 @@
+<div class="main">
+  <!-- 上方列 -->
+  <div class="top">
+    <img class="return" routerLink="/account-nav/index" src="../assets/icon/icon_Arrow_Back.png">
+    <h3>託售點數</h3>
+  </div>
+
+  <form class="main-content">
+    <label for="phone-number">手機號碼</label>
+    <input id="phone-number" type="tel" maxlength="10">
+
+    <label for="game-account">遊戲帳號</label>
+    <input id="game-account" type="text">
+
+    <label>託售點數</label>
+    <div class="consignment-point">
+      <p class="minus" (click)="minus()">－</p>
+      <input id="qty" type="number" class="point-input" value={{point.value}} readonly>
+      <p class="plus" (click)="plus()">＋</p>
+    </div>
+
+    <label for="point">實際扣除點數</label>
+    <input id="point" type="number" [formControl]="point">
+
+    <label for="pay">實際金額(收取手續費)</label>
+    <input id="pay" type="number">
+
+    <button class="account-btn gradient" routerLink="/account-nav/consignment-warn">託售</button>
+  </form>
+</div>

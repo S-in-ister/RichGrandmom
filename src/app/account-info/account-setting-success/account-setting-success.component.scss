@@ -1,0 +1,45 @@
+.main {
+  width: 100%;
+  height: 100%;
+  background: url("/assets/bg_White.png");
+  background-size: cover;
+
+  .main-content {
+    height: 95vh;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+
+    img {
+      max-width: 180px;
+      width: 40%;
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    .main-content-text {
+      width: 90%;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    p {
+      width: 80%;
+      margin-top: 10px;
+      color: #808080;
+    }
+
+    span:last-child {
+      color: red;
+    }
+
+  }
+
+}
