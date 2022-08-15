@@ -23,7 +23,6 @@ import { ContractVerifyIdentityComponent } from './contract-verify-identity/cont
 import { ContractFillBasicInfoComponent } from './contract-fill-basic-info/contract-fill-basic-info.component';
 import { ContractSetUserComponent } from './contract-set-user/contract-set-user.component';
 import { ContractSignupFinishComponent } from './contract-signup-finish/contract-signup-finish.component';
-import { AnimationComponent } from './animation/animation.component';
 import { AccountSafeComponent } from './safe/account-safe/account-safe.component';
 import { AccountOverviewComponent } from './account-info/account-overview/account-overview.component';
 import { AccountNavComponent } from './account-info/account-nav/account-nav.component';
@@ -61,7 +60,6 @@ import { AccountSafeFinishComponent } from './safe/account-safe-finish/account-s
 import { AccountTransferEveryComponent } from './account-transfer-every/account-transfer-every.component';
 import { AccountTransferEveryAddComponent } from './account-transfer-every-add/account-transfer-every-add.component';
 import { AccountTransferEveryEditComponent } from './account-transfer-every-edit/account-transfer-every-edit.component';
-import { AccountTransferEveryAccountEditComponent } from './account-transfer-every-account-edit/account-transfer-every-account-edit.component';
 import { AccountTransferEveryAccountReviceComponent } from './account-transfer-every-account-revice/account-transfer-every-account-revice.component';
 import { AccountTransferEveryReviceComponent } from './account-transfer-every-revice/account-transfer-every-revice.component';
 import { AccountSettingTransferComponent } from './account-info/account-setting-transfer/account-setting-transfer.component';
@@ -80,7 +78,6 @@ import { AccountGuardCheckComponent } from './account-info/account-guard-check/a
     ContractFillBasicInfoComponent,
     ContractSetUserComponent,
     ContractSignupFinishComponent,
-    AnimationComponent,
     AccountSafeComponent,
     AccountOverviewComponent,
     AccountNavComponent,
@@ -118,7 +115,6 @@ import { AccountGuardCheckComponent } from './account-info/account-guard-check/a
     AccountTransferEveryComponent,
     AccountTransferEveryAddComponent,
     AccountTransferEveryEditComponent,
-    AccountTransferEveryAccountEditComponent,
     AccountTransferEveryAccountReviceComponent,
     AccountTransferEveryReviceComponent,
     AccountSettingTransferComponent,

@@ -13,7 +13,7 @@ export class AccountNavComponent implements OnInit {
   details: boolean = false;
   member: boolean = false;
 
-  home_img: string = '../assets/icon/icon_Home_dynamic.png';
+  home_img: string = './assets/icon/icon_Home_dynamic.png';
   consignment_img: string = './assets/icon/icon_Consignment_dynamic.png';
   pay_img: string = './assets/icon/icon_Pay_dynamic.png';
   details_img: string = './assets/icon/icon_Details_dynamic.png';

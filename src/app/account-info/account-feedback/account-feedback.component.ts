@@ -13,11 +13,11 @@ export class AccountFeedbackComponent implements OnInit {
   four: boolean = false;
   five: boolean = false;
 
-  one_img: string = '../assets/icon/icon_One_dynamic.png';
-  two_img: string = '../assets/icon/icon_Two_dynamic.png';
-  three_img: string = '../assets/icon/icon_Three_dynamic.png';
-  four_img: string = '../assets/icon/icon_Four_dynamic.png';
-  five_img: string = '../assets/icon/icon_Five_dynamic.png';
+  one_img: string = './assets/icon/icon_One_dynamic.png';
+  two_img: string = './assets/icon/icon_Two_dynamic.png';
+  three_img: string = './assets/icon/icon_Three_dynamic.png';
+  four_img: string = './assets/icon/icon_Four_dynamic.png';
+  five_img: string = './assets/icon/icon_Five_dynamic.png';
 
   constructor() { }
 
