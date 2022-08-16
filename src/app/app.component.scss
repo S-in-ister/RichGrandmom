@@ -1,8 +1,8 @@
 .container {
-  width:428px;
-  // width: 100vw;
-  // min-height: 375px;
-  // height: 100vh;
-  height: 926px;
-  border: 1px black solid;
+  min-width: 375px;
+  width: 100vw;
+  max-width:428px;
+  height: 100vh;
+  max-height: 926px;
+  // border: 1px black solid;
 }

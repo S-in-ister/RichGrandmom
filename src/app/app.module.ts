@@ -4,8 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { QrCodeModule } from 'ng-qrcode';
-import {CdkAccordionModule} from '@angular/cdk/accordion';
-
+import { CdkAccordionModule } from '@angular/cdk/accordion';
 
 
 import { AppRoutingModule } from './app-routing.module';

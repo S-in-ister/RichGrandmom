@@ -47,8 +47,8 @@ const routes: Routes = [
   // { path: '', redirectTo: '/index', pathMatch: 'full' },
   { path:'account-nav', component: AccountNavComponent,
     children: [
-      { path:'index', component: AccountIndexComponent },
-      { path:'consignment', component: AccountConsignmentComponent },
+      { path:'index', component: AccountIndexComponent, data: {animation: "one"} },
+      { path:'consignment', component: AccountConsignmentComponent, data: {animation: "two"}  },
       { path:'consignment-warn', component: AccountConsignmentWarnComponent },
       { path:'transfer', component: AccountTransferComponent },
       { path:'transfer-every', component: AccountTransferEveryComponent },
@@ -95,7 +95,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { enableTracing: true })],
+  imports: [RouterModule.forRoot(routes, { enableTracing: false })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

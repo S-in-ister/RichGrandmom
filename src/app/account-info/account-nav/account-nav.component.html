@@ -4,13 +4,25 @@
 
 <div class="nav-content">
   <div class="menu" routerLink="/account-nav/index" (click)="onHome()">
-    <img *ngIf="home == false" src="./assets/icon/icon_Home.png">
+  <!-- <div class="menu" routerLink="/account-nav/index" (click)="choose($event.target)"> -->
+    <!-- <img *ngIf="home == false" src="./assets/icon/icon_Home.png">
     <img *ngIf="home == true" src={{home_img}}>
     <p *ngIf="home == false">首頁</p>
-    <p *ngIf="home == true" class="active">首頁</p>
+    <p *ngIf="home == true" class="active">首頁</p> -->
+
+    <ng-container *ngIf="home == false">
+      <img src="./assets/icon/icon_Home.png">
+      <p>首頁</p>
+    </ng-container>
+
+    <ng-container *ngIf="home == true">
+      <img src={{home_img}}>
+      <p class="active">首頁</p>
+    </ng-container>
   </div>
 
   <div class="menu" routerLink="/account-nav/consignment" (click)="onConsignment()">
+  <!-- <div class="menu" routerLink="/account-nav/consignment" (click)="choose($event.target)"> -->
     <img *ngIf="consignment == false" src="./assets/icon/icon_Consignment.png">
     <img *ngIf="consignment == true" src={{consignment_img}}>
     <p *ngIf="consignment == false">託售</p>

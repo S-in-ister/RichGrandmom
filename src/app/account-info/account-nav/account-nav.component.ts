@@ -90,4 +90,10 @@ export class AccountNavComponent implements OnInit {
     this.member_img = this.member_img + '?' + Math.random();
   }
 
+  choose(target: any) {
+    // target = true;
+    console.log(target);
+
+  }
+
 }
